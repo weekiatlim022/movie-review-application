@@ -1,0 +1,13 @@
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./frontend/movie-gold-v1 # Replace with the actual path to your frontend code
+    ports:
+      - "3000:3000" # Map container port to host port
+
+  backend:
+    build:
+      context: ./backend # Replace with the actual path to your backend code
+    ports:
+      - "8080:8080" # Map container port to host port
